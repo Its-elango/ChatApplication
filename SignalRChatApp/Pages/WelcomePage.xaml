@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="SignalRChatApp.Pages.WelcomePage"
+             Title="WelcomePage">
+    <VerticalStackLayout>
+        <Image Source="dotnet_bot.png"/>
+
+        <Label 
+             Text="Welcome to ED Chatt" 
+             HorizontalOptions="Center"
+             FontSize="20"
+             FontAttributes="Bold"/>
+
+        <Label Text="Proceeding with below details you can join the group"
+        Margin="10"
+         HorizontalOptions="Center"
+          FontSize="15"
+        
+          FontAttributes="Bold"/>
+        <Frame Margin="30">
+            <VerticalStackLayout Margin="10">
+               
+               
+
+                <Entry x:Name="dpName"
+                       Margin="10"
+                        Placeholder="Display name"
+                       PlaceholderColor="Gray"
+                       HorizontalOptions="Center"
+                       MinimumWidthRequest="300"/>
+                <Entry x:Name="grpName"
+                        Margin="10"
+                       Placeholder="Group name"
+                       PlaceholderColor="Gray"
+                        HorizontalOptions="Center"
+                        MinimumWidthRequest="300"/>
+
+                <Button x:Name="joinBtn"
+                        Text="Join"
+                        BackgroundColor="Green"
+                        WidthRequest="100"
+                        Clicked="joinBtn_Clicked"
+                        HorizontalOptions="Center"
+                        FontSize="18"
+                        />
+
+            </VerticalStackLayout>
+        </Frame>
+    </VerticalStackLayout>
+</ContentPage>

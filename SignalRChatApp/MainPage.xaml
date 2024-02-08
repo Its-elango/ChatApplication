@@ -1,0 +1,71 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="SignalRChatApp.MainPage">
+
+    <Grid
+        RowDefinitions="Auto, 7*, Auto, Auto">
+        <Entry
+            BackgroundColor="Green"
+            TextColor="White" 
+            FontSize="20"
+            FontAttributes="Bold"
+            x:Name="txtUsername"
+            Placeholder="Your name"/>
+
+        <ScrollView 
+            BackgroundColor="FloralWhite"
+            Grid.Row="1"
+           
+            Padding="10">
+            <StackLayout Orientation="Vertical" x:Name="lblchat">
+                
+            </StackLayout>
+            <!--<Grid 
+                RowDefinitions="Auto, Auto" 
+                ColumnDefinitions="Auto, *">
+                
+                <Label 
+                    x:Name="lblChat"
+                    FontSize="18"
+                    HorizontalOptions="StartAndExpand"
+                    TextType="Html"
+                    Grid.Row="0"
+                    Grid.Column="0" />
+
+                <Image 
+                    x:Name="Img"
+                    Margin="10"
+                    HeightRequest="100"
+                    WidthRequest="100"
+                    Grid.Row="0"
+                    Grid.Column="1" />
+            </Grid>-->
+
+        </ScrollView>
+
+        <HorizontalStackLayout Grid.Row="2" HorizontalOptions="Fill">
+            <Entry 
+          x:Name="txtMessage"
+         Placeholder="Enter your message"
+         WidthRequest="250"/>
+
+            <Button
+                x:Name="filePicker"
+               Text="🔗"
+                CornerRadius="100"
+                Clicked="filePicker_Clicked" />
+
+            <Button
+          x:Name="btnSend"
+          Text="Send"
+          CornerRadius="100"
+         BackgroundColor="Green"
+          HorizontalOptions="FillAndExpand"
+          Clicked="btnSend_Clicked"
+          WidthRequest="100"/>
+        </HorizontalStackLayout>
+
+    </Grid>
+
+</ContentPage>

@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<Shell
+    x:Class="SignalRChatApp.AppShell"
+    xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+    xmlns:local="clr-namespace:SignalRChatApp"
+    Shell.FlyoutBehavior="Disabled"
+    Title="SignalRChatApp">
+
+    <ShellContent
+        Title="ED Chatt"
+        ContentTemplate="{DataTemplate local:App}"
+        Route="MainPage" />
+
+</Shell>
