@@ -21,26 +21,6 @@
             <StackLayout Orientation="Vertical" x:Name="lblchat">
                 
             </StackLayout>
-            <!--<Grid 
-                RowDefinitions="Auto, Auto" 
-                ColumnDefinitions="Auto, *">
-                
-                <Label 
-                    x:Name="lblChat"
-                    FontSize="18"
-                    HorizontalOptions="StartAndExpand"
-                    TextType="Html"
-                    Grid.Row="0"
-                    Grid.Column="0" />
-
-                <Image 
-                    x:Name="Img"
-                    Margin="10"
-                    HeightRequest="100"
-                    WidthRequest="100"
-                    Grid.Row="0"
-                    Grid.Column="1" />
-            </Grid>-->
 
         </ScrollView>
 
